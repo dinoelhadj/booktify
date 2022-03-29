@@ -4,14 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/back"
+    android:background="@drawable/outlined_border_gradient_bg"
     tools:context=".MainActivity" >
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_url="https://assets9.lottiefiles.com/packages/lf20_ikk4jhps.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/mainActivity_mainIv"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@null"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,10 +41,10 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/outlined_border_bg"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@color/purple_500"
         android:onClick="goToLogin"
         android:text="Login"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

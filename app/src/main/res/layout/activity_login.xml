@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/login"
+    android:background="@drawable/outlined_border_gradient_bg"
     tools:context=".LoginActivity">
 
     <TextView
@@ -54,16 +54,17 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
             app:startIconDrawable="@drawable/ic_email_24"
             app:startIconTint="@color/purple_500">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
                 android:inputType="textEmailAddress"
-
-                android:backgroundTint="@android:color/transparent"/>
+                android:textColor="@color/white"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,17 +76,17 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
             app:startIconDrawable="@drawable/ic_lock_24"
             app:startIconTint="@color/purple_500"
             app:endIconMode="password_toggle">
-
-        >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:textColor="@color/white"
                 android:backgroundTint="@android:color/transparent"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -151,7 +152,7 @@
             android:background="@drawable/outlined_border_white_bg"
             android:onClick="goToRegisterActivity"
             android:text="Register"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/white"
             app:backgroundTint="@null" />
     </LinearLayout>
 

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/back"
+    android:background="@drawable/outlined_border_gradient_bg"
     tools:context=".RegisterActivity">
     <ImageButton
         android:id="@+id/imageButton"
@@ -151,11 +151,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/et_white_round_bg"
+        android:background="@drawable/outlined_border_bg"
+        app:backgroundTint="@color/purple_500"
         android:onClick="proceedRegistration"
         android:text="Register"
-        android:textColor="@color/purple_500"
-        app:backgroundTint="@null"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

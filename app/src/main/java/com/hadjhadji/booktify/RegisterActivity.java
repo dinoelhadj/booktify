@@ -50,8 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
     public void setNewAvatar(){
         String url = "https://avatars.dicebear.com/api/jdenticon/"
                 + Utils.randomString()
-                + ".png?background="
-                + Utils.randomColor();
+                + ".png?background=blue";
+                //+ Utils.randomColor();
         Utils.fetchPng(profile_image,url);
     }
 
